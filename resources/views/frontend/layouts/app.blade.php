@@ -11,9 +11,9 @@
         <title>@yield('title', app_name())</title>
 
         <!-- Meta -->
-        <meta name="description" content="@yield('meta_description', 'Laravel AdminPanel')">
+        <meta name="description" content="@yield('meta_description', 'Expense Manager')">
         <meta name="author" content="@yield('meta_author', 'Viral Solani')">
-        <meta name="keywords" content="@yield('meta_keywords', 'Laravel AdminPanel')">
+        <meta name="keywords" content="@yield('meta_keywords', 'Expense Manager')">
         @yield('meta')
 
         <!-- Styles -->

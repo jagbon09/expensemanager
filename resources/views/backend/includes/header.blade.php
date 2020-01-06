@@ -27,16 +27,16 @@
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
 
-                @if (config('locale.status') && count(config('locale.languages')) > 1)
+                <!-- @if (config('locale.status') && count(config('locale.languages')) > 1)
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                             <i class="fa fa-language"></i> {{ trans('menus.language-picker.language') }} <span class="caret"></span>
                         </a>
                         @include('includes.partials.lang')
                     </li>
-                @endif
+                @endif -->
 
-                <li class="dropdown messages-menu">
+                <!-- <li class="dropdown messages-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-envelope-o"></i>
                         <span class="label label-info">0</span>
@@ -48,9 +48,9 @@
                             {{ link_to('#', trans('strings.backend.general.see_all.messages')) }}
                         </li>
                     </ul>
-                </li><!-- /.messages-menu -->
+                </li> --><!-- /.messages-menu -->
 
-                <li class="dropdown notifications-menu">
+                <!-- <li class="dropdown notifications-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-bell-o"></i>
                         <span class="label label-info notification-counter"></span>
@@ -58,9 +58,9 @@
 
                     <ul class="dropdown-menu notification-menu-container">
                     </ul>
-                </li><!-- /.notifications-menu -->
+                </li> --><!-- /.notifications-menu -->
 
-                <li class="dropdown tasks-menu">
+                <!-- <li class="dropdown tasks-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-flag-o"></i>
                         <span class="label label-info">0</span>
@@ -72,9 +72,23 @@
                             {{ link_to('#', trans('strings.backend.general.see_all.tasks')) }}
                         </li>
                     </ul>
-                </li><!-- /.tasks-menu -->
+                </li> --><!-- /.tasks-menu -->
 
-                <li class="dropdown user user-menu">
+                <li class="dropdown tasks-menu">
+                    <a href="#">
+                        Welcome to Expense Manager
+                    </a>
+
+                </li>
+
+                <li class="dropdown tasks-menu">
+                    <a href="{!! route('frontend.auth.logout') !!}" class="btn btn-primary btn-flat">
+                        {{ trans('navs.general.logout') }}
+                    </a>
+
+                </li>
+
+                <!-- <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img src="{{ access()->user()->picture }}" class="user-image" alt="User Avatar"/>
                         <span class="hidden-xs">{{ access()->user()->first_name }}</span>
@@ -119,7 +133,7 @@
                             </div>
                         </li>
                     </ul>
-                </li>
+                </li> -->
             </ul>
         </div><!-- /.navbar-custom-menu -->
     </nav>
