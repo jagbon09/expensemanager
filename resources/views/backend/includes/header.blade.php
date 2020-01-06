@@ -75,8 +75,8 @@
                 </li> --><!-- /.tasks-menu -->
 
                 <li class="dropdown tasks-menu">
-                    <a href="#">
-                        Welcome to Expense Manager
+                    <a href="#" style="pointer-events: none;">
+                        {{ trans('navs.general.welcome') }}
                     </a>
 
                 </li>

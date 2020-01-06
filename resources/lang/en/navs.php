@@ -14,8 +14,9 @@ return [
     */
 
     'general' => [
-        'home'   => 'Home',
-        'logout' => 'Logout',
+        'home'      => 'Home',
+        'logout'    => 'Logout',
+        'welcome'   => 'Welcome to Expense Manager',
     ],
 
     'frontend' => [
