@@ -7,7 +7,7 @@
         </span>
 
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg">
+        <!-- <span class="logo-lg">
            {{--  @php
                  $settings = settings();
             @endphp
@@ -16,7 +16,9 @@
             @else --}}
                 {{ app_name() }}
            {{--  @endif --}}
-        </span>
+        </span> -->
+        <img src="{{ access()->user()->picture }}" class="img-circle" alt="User Avatar" style="width: 15%;"/>
+        {{access()->user()->name }}
     </a>
 
     <nav class="navbar navbar-static-top" role="navigation">

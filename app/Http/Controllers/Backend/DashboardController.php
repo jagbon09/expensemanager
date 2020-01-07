@@ -7,6 +7,7 @@ use App\Models\Access\Permission\Permission;
 use App\Models\Access\Role\Role;
 use App\Models\Access\User\User;
 use App\Models\Settings\Setting;
+use App\Models\Expense\Expense;
 use Illuminate\Http\Request;
 
 /**
@@ -20,9 +21,21 @@ class DashboardController extends Controller
     public function index()
     {
         $settingData = Setting::first();
-        $google_analytics = $settingData->google_analytics;
 
-        return view('backend.dashboard', compact('google_analytics', $google_analytics));
+        // $google_analytics = $settingData->google_analytics;
+
+        $expenses = Expense::all();
+        $Data = array();
+
+        foreach ($expenses as $k => $expense) {
+            $Data[] = array(
+                          "value" => $expense->amount,
+                          "name" => $expense->name,
+                        );
+        }
+
+        // return view('backend.dashboard', compact('google_analytics', $google_analytics));
+        return view('backend.dashboard',['Data' => $Data]);
     }
 
     /**

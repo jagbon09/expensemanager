@@ -59,5 +59,15 @@ return [
 	"deleted" => "The ExpenseCategory was successfully deleted.",
 	"updated" => "The ExpenseCategory was successfully updated.",
 	],
+	"categories" => [
+	"created" => "The Category was successfully created.",
+	"deleted" => "The Category was successfully deleted.",
+	"updated" => "The Category was successfully updated.",
+	],
+	"expenses" => [
+	"created" => "The Expense was successfully created.",
+	"deleted" => "The Expense was successfully deleted.",
+	"updated" => "The Expense was successfully updated.",
+	],
 	],
 ];

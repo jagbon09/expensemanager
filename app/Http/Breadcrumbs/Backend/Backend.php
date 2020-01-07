@@ -18,3 +18,5 @@ require __DIR__.'/Menu.php';
 require __DIR__.'/LogViewer.php';
 
 require __DIR__.'/ExpenseCategory.php';
+require __DIR__.'/Category.php';
+require __DIR__.'/Expense.php';

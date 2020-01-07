@@ -191,6 +191,11 @@ return [
                 'status'           => 'Status',
             ],
 
+            'expenses' => [
+                'title'            => 'Blog Title',
+                'date'             => 'Date'
+            ],
+
             'settings' => [
                 'sitelogo'        => 'Site Logo',
                 'favicon'         => 'Fav Icon',

@@ -23,4 +23,10 @@ return [
 	"expensecategories" => [
 	"table" => "expensecategories",
 	],
+	"categories" => [
+	"table" => "categories",
+	],
+	"expenses" => [
+	"table" => "expenses",
+	],
 ];

@@ -115,6 +115,20 @@ return [
 	"management" => "ExpenseCategory Management",
 	"main" => "ExpenseCategories",
 	],
+	"categories" => [
+	"all" => "All Categories",
+	"create" => "Create Category",
+	"edit" => "Edit Category",
+	"management" => "Category Management",
+	"main" => "Categories",
+	],
+	"expenses" => [
+	"all" => "All Expenses",
+	"create" => "Create Expense",
+	"edit" => "Edit Expense",
+	"management" => "Expense Management",
+	"main" => "Expenses",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",
